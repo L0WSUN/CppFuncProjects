@@ -63,7 +63,7 @@ int main()
     cin >> a;
     cout << "Input b ";
     cin >> b;
-    cout << "Выберите действие: +,-,:,* ";
+    cout << "Выберите действие: +,-,:,*: ";
     cin >> op;
     switch (op) {
     case '+':
@@ -76,6 +76,11 @@ int main()
         cout << a * b;
         break;
     case '/':
+        if (b == 0) cout << "На 0 делить нельзя";
+        else
+        {
+            cout << a / b;
+        }
         cout << a / b;
         break;
     default:
